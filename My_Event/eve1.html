@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Ka Anubhav</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    body{
+        background-image: url('images/chai2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container{
+        display: inline-block;
+        position: absolute;
+        border: 2px solid black;
+        left: 32%;
+        top: 2%;
+        border-radius: 10px;
+        font-family: cursive;
+        width: 30%;
+        /* margin: 160px 50px; */
+        padding: 20px;
+        text-align: justify;
+        background-color: black;
+        color: white;
+        opacity: 0.8;
+    }
+    .title{
+        text-align: center;
+        /* text-decoration: underline; */
+        color: goldenrod;
+    }
+    .btn{
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: gray;
+    }
+    input[type=text]{
+        width: 50%;
+        background-color: black;
+        color: white;
+        box-sizing: border-box;
+        border: 2px solid grey;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="title">
+                <h1>!! CHAI KA ANUBHAV !!</h1>
+                <h2>Event Registration</h2>
+            </div>
+            <form action="noaction.php">
+                <div class="event">
+                    <label for="name">Name: </label><br>
+                    <input type="text" id="name" name="" placeholder="Enter your name"><br><br>
+                    <label for="rno">Registration Number: </label><br>
+                    <input type="text" id="rno" name="" placeholder="Enter your registration number"><br><br>
+                    <label for="em">Email: </label><br>
+                    <input type="text" id="em" name="" placeholder="Enter your Email"><br><br>
+                    <label for="con">Phone: </label><br>
+                    <input type="text" id="con" name="" placeholder="Enter your phone number"><br><br>
+                </div>
+                    <p>How did you hear about the event?  </p>
+                <div class="buttons">
+                    <input type="radio" id="sm" name="socio" value="Social Media">
+                    <label for="sm">Social Media</label><br>
+                    <input type="radio" id="mail" name="socio" value="Email">
+                    <label for="mail">Email</label><br>
+                    <input type="radio" id="fco" name="socio" value="Friend or Co-worker">
+                    <label for="fco">Friend or Co-worker</label><br>
+                    <input type="radio" id="wom" name="socio" value="Word of Mouth">
+                    <label for="wom">Word of Mouth</label><br>
+                    <input type="radio" id="oth" name="socio" value="Other">
+                    <label for="oth">Other</label><br><br>
+                </div>
+                <div class="bottom">
+                    <button class="btn">Submit</button>
+                    <!-- <button class="btn">Clear</button> -->
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
